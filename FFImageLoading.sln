@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31710.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading", "source\FFImageLoading.Common\FFImageLoading.csproj", "{51CA3BE2-DF00-4F49-8054-E5C776992B61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading", "source\FFImageLoading.Common\FFImageLoading.csproj", "{51CA3BE2-DF00-4F49-8054-E5C776992B61}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FFImageLoading.Shared", "source\FFImageLoading.Shared\FFImageLoading.Shared.shproj", "{E72AC4ED-03A8-465C-95A2-38B0544B37DB}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Sample.iOS", "samples\ImageLoading.Forms.Sample\iOS\FFImageLoading.Forms.Sample.iOS.csproj", "{626BF52A-2C8A-4E1E-AFE5-2EA3903FFBDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Sample", "samples\ImageLoading.Forms.Sample\Shared\FFImageLoading.Forms.Sample.csproj", "{3A682234-5918-4F58-B02B-598A59C6A7BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Forms.Sample", "samples\ImageLoading.Forms.Sample\Shared\FFImageLoading.Forms.Sample.csproj", "{3A682234-5918-4F58-B02B-598A59C6A7BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Universal.Sample", "samples\Simple.WinUniversal.Sample\Simple.Universal.Sample.csproj", "{4B964916-47F4-4876-8A6B-9048B8A0D148}"
 EndProject
@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Windows", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{F7C14B24-556B-413B-B418-4CD194766A26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms", "source\FFImageLoading.Forms\FFImageLoading.Forms.csproj", "{3D6C1F12-68D7-44C2-A7DE-8E7942627A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Forms", "source\FFImageLoading.Forms\FFImageLoading.Forms.csproj", "{3D6C1F12-68D7-44C2-A7DE-8E7942627A01}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Droid", "source\FFImageLoading.Forms.Droid\FFImageLoading.Forms.Droid.csproj", "{7014FEB6-0338-4A47-B600-4A1B48127C5C}"
 EndProject
@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.WinUWP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transformations", "Transformations", "{8F977FC5-CA16-4EEF-9222-2C77F88A7125}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Transformations", "source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj", "{E68FD3BB-5851-45CC-9B33-DE6AB28B9984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Transformations", "source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj", "{E68FD3BB-5851-45CC-9B33-DE6AB28B9984}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Transformations.Droid", "source\FFImageLoading.Transformations.Droid\FFImageLoading.Transformations.Droid.csproj", "{BD3CEB96-93D6-47BD-9474-01DFCD320897}"
 EndProject
@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Touch", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Droid", "source\FFImageLoading.Svg.Droid\FFImageLoading.Svg.Droid.csproj", "{0BF13419-BA9C-4004-812C-EB22E41927D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Forms", "source\FFImageLoading.Svg.Forms\FFImageLoading.Svg.Forms.csproj", "{DE555E87-187D-4768-8053-B2D3195B6792}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Svg.Forms", "source\FFImageLoading.Svg.Forms\FFImageLoading.Svg.Forms.csproj", "{DE555E87-187D-4768-8053-B2D3195B6792}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FFImageLoading.Svg.Shared", "source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.shproj", "{488664FA-5BC5-4868-9FC4-44DB7294EC5A}"
 EndProject
@@ -65,7 +65,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Forms.Dr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FFImageLoading.Svg.Forms.Shared", "source\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.shproj", "{3F817BAD-EDFB-44E3-A9EF-1FDED55ED787}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg", "source\FFImageLoading.Svg\FFImageLoading.Svg.csproj", "{E5C8FBB7-595D-43FE-B900-46027D0D4F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Svg", "source\FFImageLoading.Svg\FFImageLoading.Svg.csproj", "{E5C8FBB7-595D-43FE-B900-46027D0D4F69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Windows", "source\FFImageLoading.Svg.Windows\FFImageLoading.Svg.Windows.csproj", "{5140739D-209C-41A7-9503-5D5733F4C091}"
 EndProject
@@ -87,9 +87,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Mac", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Sample.Mac", "samples\ImageLoading.Forms.Sample\Mac\FFImageLoading.Forms.Sample.Mac.csproj", "{75D24499-446D-47DD-9C9A-295E40010CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Tests", "source\Tests\FFImageLoading.Tests\FFImageLoading.Tests.csproj", "{844EF512-7E52-4515-AC00-5FF50800F2B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Tests", "source\Tests\FFImageLoading.Tests\FFImageLoading.Tests.csproj", "{844EF512-7E52-4515-AC00-5FF50800F2B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Mock", "source\FFImageLoading.Mock\FFImageLoading.Mock.csproj", "{32BFDBC6-F42B-4D67-BF53-E19BB7D3A799}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Mock", "source\FFImageLoading.Mock\FFImageLoading.Mock.csproj", "{32BFDBC6-F42B-4D67-BF53-E19BB7D3A799}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Mac", "source\FFImageLoading.Mac\FFImageLoading.Mac.csproj", "{91825F9F-8F2D-4848-8375-68FCAA8C0DC6}"
 EndProject
@@ -104,46 +104,60 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuspec", "Nuspec", "{5C360F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Transformations.Mac", "source\FFImageLoading.Transformations.Mac\FFImageLoading.Transformations.Mac.csproj", "{CFDF882F-588F-4CE4-BFBF-9D4E3A991BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Tizen", "source\FFImageLoading.Forms.Tizen\FFImageLoading.Forms.Tizen.csproj", "{FF334AE1-1B61-4979-8C8E-FD486B246859}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Forms.Tizen", "source\FFImageLoading.Forms.Tizen\FFImageLoading.Forms.Tizen.csproj", "{FF334AE1-1B61-4979-8C8E-FD486B246859}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Transformations.Tizen", "source\FFImageLoading.Transformations.Tizen\FFImageLoading.Transformations.Tizen.csproj", "{CA4E6EF4-36C8-4347-A8A9-A1540C837AB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Transformations.Tizen", "source\FFImageLoading.Transformations.Tizen\FFImageLoading.Transformations.Tizen.csproj", "{CA4E6EF4-36C8-4347-A8A9-A1540C837AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Tizen", "source\FFImageLoading.Svg.Tizen\FFImageLoading.Svg.Tizen.csproj", "{B27E52FA-74DC-42C7-ACBC-5A893271AFFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Svg.Tizen", "source\FFImageLoading.Svg.Tizen\FFImageLoading.Svg.Tizen.csproj", "{B27E52FA-74DC-42C7-ACBC-5A893271AFFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Forms.Tizen", "source\FFImageLoading.Svg.Forms.Tizen\FFImageLoading.Svg.Forms.Tizen.csproj", "{CB1F7760-C8A6-40A3-9B90-F05628B62C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Svg.Forms.Tizen", "source\FFImageLoading.Svg.Forms.Tizen\FFImageLoading.Svg.Forms.Tizen.csproj", "{CB1F7760-C8A6-40A3-9B90-F05628B62C2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Tizen", "source\FFImageLoading.Tizen\FFImageLoading.Tizen.csproj", "{DCC22B65-C384-4101-B61B-1A8515D68F06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Tizen", "source\FFImageLoading.Tizen\FFImageLoading.Tizen.csproj", "{DCC22B65-C384-4101-B61B-1A8515D68F06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Mac", "source\FFImageLoading.Svg.Mac\FFImageLoading.Svg.Mac.csproj", "{EAEFDF02-E6BB-4ACD-925A-F8BCCD479DA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Svg.Forms.Mac", "source\FFImageLoading.Svg.Forms.Mac\FFImageLoading.Svg.Forms.Mac.csproj", "{411B82F4-4F6B-49A0-8E28-260FB65B386F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Mock", "source\FFImageLoading.Forms.Mock\FFImageLoading.Forms.Mock.csproj", "{957F1B47-0ADC-4BFE-AB87-8D0FBFB59BC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Forms.Mock", "source\FFImageLoading.Forms.Mock\FFImageLoading.Forms.Mock.csproj", "{957F1B47-0ADC-4BFE-AB87-8D0FBFB59BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Transformations.Windows", "source\FFImageLoading.Transformations.Windows\FFImageLoading.Transformations.Windows.csproj", "{399E7E28-5A3D-471F-B6FC-D5770EBB6762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Transformations.Windows", "source\FFImageLoading.Transformations.Windows\FFImageLoading.Transformations.Windows.csproj", "{399E7E28-5A3D-471F-B6FC-D5770EBB6762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Sample.Tizen", "samples\ImageLoading.Forms.Sample\Tizen\FFImageLoading.Forms.Sample.Tizen.csproj", "{26980B5F-05B3-4070-A2A7-28749166E44C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Forms.Sample.Tizen", "samples\ImageLoading.Forms.Sample\Tizen\FFImageLoading.Forms.Sample.Tizen.csproj", "{26980B5F-05B3-4070-A2A7-28749166E44C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.TizenForms.Sample", "samples\Simple.TizenForms.Sample\Simple.TizenForms.Sample.csproj", "{01B928BA-5E3B-46C6-B172-624A60ECC534}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.TizenForms.Sample", "samples\Simple.TizenForms.Sample\Simple.TizenForms.Sample.csproj", "{01B928BA-5E3B-46C6-B172-624A60ECC534}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Mac.Sample", "samples\FFImageLoading.Mac.Sample\FFImageLoading.Mac.Sample.csproj", "{8A21BBDD-F3BA-4966-8E5F-A65D4EAE7F2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Forms.Sample.WinUWP", "samples\ImageLoading.Forms.Sample\WinUWP\FFImageLoading.Forms.Sample.WinUWP.csproj", "{8E16617A-EA87-4E8D-8CD1-AD5E6D73188F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MAUI", "MAUI", "{280D342B-3137-40B7-82EB-D87A5AC3F8A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.MAUI", "FFImageLoading.MAUI\FFImageLoading.MAUI.csproj", "{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems*{0bf13419-ba9c-4004-812c-eb22e41927d9}*SharedItemsImports = 4
 		source\FFImageLoading.Cross\FFImageLoading.Cross.projitems*{1597f7d4-432c-4f26-b508-0f6faf0b9711}*SharedItemsImports = 4
+		source\FFImageLoading.Shared.IosMac\FFImageLoading.Shared.IosMac.projitems*{1597f7d4-432c-4f26-b508-0f6faf0b9711}*SharedItemsImports = 4
 		source\FFImageLoading.Shared\FFImageLoading.Shared.projitems*{1597f7d4-432c-4f26-b508-0f6faf0b9711}*SharedItemsImports = 4
 		source\FFImageLoading.Shared.IosMac\FFImageLoading.Shared.IosMac.projitems*{26f4db3b-ec7f-46de-8d51-2cb4ba187a16}*SharedItemsImports = 13
 		source\FFImageLoading.Cross\FFImageLoading.Cross.projitems*{3c58b37d-edb7-4778-aa48-f3ad9a571059}*SharedItemsImports = 13
 		source\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems*{3f817bad-edfb-44e3-a9ef-1fded55ed787}*SharedItemsImports = 13
+		source\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems*{411b82f4-4f6b-49a0-8e28-260fb65b386f}*SharedItemsImports = 4
 		source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems*{488664fa-5bc5-4868-9fc4-44db7294ec5a}*SharedItemsImports = 13
 		source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems*{5140739d-209c-41a7-9503-5d5733f4c091}*SharedItemsImports = 4
 		source\FFImageLoading.Cross.Svg\FFImageLoading.Cross.Svg.projitems*{60678181-1544-4276-9b2a-6239c1046ea5}*SharedItemsImports = 13
 		source\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems*{6d4f9dfa-012e-4966-a6e8-01c3464b537e}*SharedItemsImports = 4
 		source\FFImageLoading.Cross\FFImageLoading.Cross.projitems*{74bf9402-3e13-4003-8923-bc20a1294ce2}*SharedItemsImports = 4
 		source\FFImageLoading.Shared\FFImageLoading.Shared.projitems*{74bf9402-3e13-4003-8923-bc20a1294ce2}*SharedItemsImports = 4
+		source\FFImageLoading.Shared.IosMac\FFImageLoading.Shared.IosMac.projitems*{91825f9f-8f2d-4848-8375-68fcaa8c0dc6}*SharedItemsImports = 4
+		source\FFImageLoading.Shared\FFImageLoading.Shared.projitems*{91825f9f-8f2d-4848-8375-68fcaa8c0dc6}*SharedItemsImports = 4
+		source\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems*{a73a1ea8-e709-474d-9102-dcb2482950ab}*SharedItemsImports = 4
+		source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems*{aa5b8d71-77c6-4341-bfba-ebb7b8faf5ac}*SharedItemsImports = 4
+		source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems*{b27e52fa-74dc-42c7-acbc-5a893271affe}*SharedItemsImports = 5
+		source\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems*{cca629e9-55e3-414a-91af-79a0cb845cd5}*SharedItemsImports = 4
 		source\FFImageLoading.Shared\FFImageLoading.Shared.projitems*{e72ac4ed-03a8-465c-95a2-38b0544b37db}*SharedItemsImports = 13
+		source\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems*{eaefdf02-e6bb-4acd-925a-f8bccd479da3}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1265,6 +1279,30 @@ Global
 		{8E16617A-EA87-4E8D-8CD1-AD5E6D73188F}.Release|x86.ActiveCfg = Release|x86
 		{8E16617A-EA87-4E8D-8CD1-AD5E6D73188F}.Release|x86.Build.0 = Release|x86
 		{8E16617A-EA87-4E8D-8CD1-AD5E6D73188F}.Release|x86.Deploy.0 = Release|x86
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|x64.Build.0 = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Debug|x86.Build.0 = Debug|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|ARM.Build.0 = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|iPhone.Build.0 = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|x64.ActiveCfg = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|x64.Build.0 = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|x86.ActiveCfg = Release|Any CPU
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1314,6 +1352,7 @@ Global
 		{01B928BA-5E3B-46C6-B172-624A60ECC534} = {B48F3C95-B33F-4EF5-B223-06356D749A80}
 		{8A21BBDD-F3BA-4966-8E5F-A65D4EAE7F2B} = {B48F3C95-B33F-4EF5-B223-06356D749A80}
 		{8E16617A-EA87-4E8D-8CD1-AD5E6D73188F} = {B48F3C95-B33F-4EF5-B223-06356D749A80}
+		{D626736C-E0C0-489B-BDCE-D991CEC9DCD4} = {280D342B-3137-40B7-82EB-D87A5AC3F8A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BF56189-8DC5-41A9-9440-3C7B9F57E151}
