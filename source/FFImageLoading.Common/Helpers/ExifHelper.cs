@@ -14,7 +14,7 @@ namespace FFImageLoading.Helpers
 
         static readonly ExifReader _exifReader = new ExifReader();
 
-        public static IList<Directory> Read(Stream stream)
+        public static IList<Exif.Directory> Read(Stream stream)
         {
             if (stream.Position != 0)
                 stream.Position = 0;
@@ -23,7 +23,7 @@ namespace FFImageLoading.Helpers
             var segmentTypes = _exifReader.SegmentTypes;
             var segments = JpegSegmentReader.ReadSegments(new SequentialStreamReader(stream), segmentTypes);
 
-            var directories = new List<Directory>();
+            var directories = new List<Exif.Directory>();
 
             var readerSegmentTypes = _exifReader.SegmentTypes;
             var readerSegments = segments.Where(s => readerSegmentTypes.Contains(s.Type));

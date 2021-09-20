@@ -13,10 +13,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Platforms\Android\" />
 	  <Folder Include="Platforms\iOS\" />
 	  <Folder Include="Platforms\MacCatalyst\" />
-	  <Folder Include="Platforms\Windows\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\source\FFImageLoading.Common\FFImageLoading.csproj" />
+	  <ProjectReference Include="..\source\FFImageLoading.Droid\FFImageLoading.Droid.csproj" />
 	</ItemGroup>
 
 </Project>
