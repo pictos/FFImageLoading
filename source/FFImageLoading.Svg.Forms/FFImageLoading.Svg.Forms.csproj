@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <NetStandardImplicitPackageVersion>2.0.2</NetStandardImplicitPackageVersion>        
     <AssemblyName>FFImageLoading.Svg.Forms</AssemblyName>
     <PackageId>FFImageLoading.Svg.Forms</PackageId>
