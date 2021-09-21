@@ -20,6 +20,8 @@ namespace FFImageLoading.MAUI.Sample
 				{
 #if ANDROID
 					h.AddCompatibilityRenderer(typeof(FFImageLoading.Forms.CachedImage), typeof(FFImageLoading.Forms.Platform.CachedImageFastRenderer));
+#elif IOS
+					h.AddCompatibilityRenderer(typeof(FFImageLoading.Forms.CachedImage), typeof(FFImageLoading.Forms.Platform.CachedImageRenderer));
 #endif
 				});
 			return builder.Build();
