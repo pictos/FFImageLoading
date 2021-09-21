@@ -33,4 +33,16 @@
     <ProjectReference Include="..\source\FFImageLoading.Common\FFImageLoading.csproj" />
 	</ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Platforms\iOS\CachedImageRenderer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Platforms\iOS\FFImageLoadingImageSourceHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Platforms\iOS\ImageSourceBinding.cs" />
+  </ItemGroup>
+
 </Project>
