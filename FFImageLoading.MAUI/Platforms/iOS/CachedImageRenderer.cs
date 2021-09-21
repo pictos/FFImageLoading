@@ -16,18 +16,18 @@ using Microsoft.Maui.Controls.Compatibility.Platform.iOS;
 using Microsoft.Maui.Controls.Platform;
 using Microsoft.Maui;
 
-#if __IOS__
+//#if __IOS__
 using UIKit;
 using PImage = UIKit.UIImage;
 using PImageView = UIKit.UIImageView;
 
-#elif __MACOS__
-using AppKit;
-using PImage = AppKit.NSImage;
-using PImageView = FFImageLoading.Forms.Platform.CachedImageRenderer.FormsNSImageView;
-using Xamarin.Forms.Platform.MacOS;
-using System.IO;
-#endif
+//#elif __MACOS__
+//using AppKit;
+//using PImage = AppKit.NSImage;
+//using PImageView = FFImageLoading.Forms.Platform.CachedImageRenderer.FormsNSImageView;
+//using Xamarin.Forms.Platform.MacOS;
+//using System.IO;
+//#endif
 
 namespace FFImageLoading.Forms.Platform
 {
@@ -108,15 +108,15 @@ namespace FFImageLoading.Forms.Platform
 
             if (Control == null && Element != null && !_isDisposed)
             {
-#if __IOS__
+//#if __IOS__
                 SetNativeControl(new PImageView(CGRect.Empty)
                 {
                     ContentMode = UIViewContentMode.ScaleAspectFit,
                     ClipsToBounds = true
                 });
-#elif __MACOS__
-                SetNativeControl(new PImageView());
-#endif
+//#elif __MACOS__
+//                SetNativeControl(new PImageView());
+//#endif
             }
 
             if (e.OldElement != null)
@@ -162,34 +162,34 @@ namespace FFImageLoading.Forms.Platform
         {
             if (Control == null || Control.Handle == IntPtr.Zero || Element == null || _isDisposed)
                 return;
-#if __IOS__
+//#if __IOS__
             Control.ContentMode = Element.Aspect.ToUIViewContentMode();
-#elif __MACOS__
-            switch (Element.Aspect)
-            {
-                case Aspect.AspectFill:
-                    Control.Layer.ContentsGravity = CALayer.GravityResizeAspectFill;
-                    break;
-                case Aspect.Fill:
-                    Control.Layer.ContentsGravity = CALayer.GravityResize;
-                    break;
-                case Aspect.AspectFit:
-                default:
-                    Control.Layer.ContentsGravity = CALayer.GravityResizeAspect;
-                    break;
-            }
-#endif
+//#elif __MACOS__
+//            switch (Element.Aspect)
+//            {
+//                case Aspect.AspectFill:
+//                    Control.Layer.ContentsGravity = CALayer.GravityResizeAspectFill;
+//                    break;
+//                case Aspect.Fill:
+//                    Control.Layer.ContentsGravity = CALayer.GravityResize;
+//                    break;
+//                case Aspect.AspectFit:
+//                default:
+//                    Control.Layer.ContentsGravity = CALayer.GravityResizeAspect;
+//                    break;
+//            }
+//#endif
         }
 
         private void SetOpacity()
         {
             if (Control == null || Control.Handle == IntPtr.Zero || Element == null || _isDisposed)
                 return;
-#if __IOS__
+//#if __IOS__
             Control.Opaque = Element.IsOpaque;
-#elif __MACOS__            
-            Control.SetIsOpaque(Element.IsOpaque);
-#endif
+//#elif __MACOS__            
+//            Control.SetIsOpaque(Element.IsOpaque);
+//#endif
         }
 
         private void UpdateImage(PImageView imageView, CachedImage image, CachedImage previousImage)
@@ -308,7 +308,7 @@ namespace FFImageLoading.Forms.Platform
                 image = image.ResizeUIImage(desiredWidth, desiredHeight, InterpolationMode.Default);
             }
 
-#if __IOS__
+//#if __IOS__
 
             var imageData = usePNG ? image.AsPNG() : image.AsJPEG((nfloat)quality / 100f);
 
@@ -318,51 +318,51 @@ namespace FFImageLoading.Forms.Platform
             var encoded = imageData.ToArray();
             imageData.TryDispose();
             return encoded;
-#elif __MACOS__
+//#elif __MACOS__
 
-            byte[] encoded;
-            using (MemoryStream ms = new MemoryStream())
-            using (var stream = usePNG ? image.AsPngStream() : image.AsJpegStream(quality))
-            {
-                stream.CopyTo(ms);
-                encoded = ms.ToArray();
-            }
+//            byte[] encoded;
+//            using (MemoryStream ms = new MemoryStream())
+//            using (var stream = usePNG ? image.AsPngStream() : image.AsJpegStream(quality))
+//            {
+//                stream.CopyTo(ms);
+//                encoded = ms.ToArray();
+//            }
 
-            if (desiredWidth != 0 || desiredHeight != 0)
-            {
-                image.TryDispose();
-            }
+//            if (desiredWidth != 0 || desiredHeight != 0)
+//            {
+//                image.TryDispose();
+//            }
 
-            return encoded;
-#endif
+//            return encoded;
+//#endif
         }
 
-#if __MACOS__
-        public class FormsNSImageView : NSImageView
-        {
-            bool _isOpaque;
+//#if __MACOS__
+//        public class FormsNSImageView : NSImageView
+//        {
+//            bool _isOpaque;
 
-            public FormsNSImageView()
-            {
-                //Layer = new FFCALayer();
-                //WantsLayer = true;
-            }
+//            public FormsNSImageView()
+//            {
+//                //Layer = new FFCALayer();
+//                //WantsLayer = true;
+//            }
 
-            public void SetIsOpaque(bool isOpaque)
-            {
-                _isOpaque = isOpaque;
-            }
+//            public void SetIsOpaque(bool isOpaque)
+//            {
+//                _isOpaque = isOpaque;
+//            }
 
-            //public override void DrawRect(CGRect dirtyRect)
-            //{
-            //    // TODO if it isn't disabled then this issue happens: 
-            //    // https://github.com/luberda-molinet/FFImageLoading/issues/922
-            //    // base.DrawRect(dirtyRect);
-            //}
+//            //public override void DrawRect(CGRect dirtyRect)
+//            //{
+//            //    // TODO if it isn't disabled then this issue happens: 
+//            //    // https://github.com/luberda-molinet/FFImageLoading/issues/922
+//            //    // base.DrawRect(dirtyRect);
+//            //}
 
-            public override bool IsOpaque => _isOpaque;
-        }
-#endif
+//            public override bool IsOpaque => _isOpaque;
+//        }
+//#endif
     }
 }
 

@@ -5,14 +5,14 @@ using FFImageLoading.Forms.Handlers;
 using FFImageLoading.Work;
 using Microsoft.Maui.Controls.Compatibility.Platform.iOS;
 
-#if __IOS__
+//#if __IOS__
 using PImage = UIKit.UIImage;
 using PImageTarget = FFImageLoading.Targets.UIImageTarget;
-#elif __MACOS__
-using PImage = AppKit.NSImage;
-using PImageTarget = FFImageLoading.Targets.NSImageTarget;
-using Xamarin.Forms.Platform.MacOS;
-#endif
+//#elif __MACOS__
+//using PImage = AppKit.NSImage;
+//using PImageTarget = FFImageLoading.Targets.NSImageTarget;
+//using Xamarin.Forms.Platform.MacOS;
+//#endif
 
 namespace FFImageLoading.Forms.Platform
 {
