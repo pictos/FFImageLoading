@@ -31,8 +31,8 @@ namespace FFImageLoading.Forms.Platform
 	[Preserve(AllMembers = true)]
 	public class CachedImageFastRenderer : CachedImageView, IVisualElementRenderer
 	{
-		internal static readonly Type ElementRendererType = typeof(Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers.ImageRenderer).Assembly.GetType("Xamarin.Forms.Platform.Android.FastRenderers.VisualElementRenderer");
-		private static readonly MethodInfo _viewExtensionsMethod = typeof(Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers.ImageRenderer).Assembly.GetType("Xamarin.Forms.Platform.Android.ViewExtensions")?.GetRuntimeMethod("EnsureId", new[] { typeof(Android.Views.View) });
+		internal static readonly Type ElementRendererType = typeof(Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers.ImageRenderer).Assembly.GetType("Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers.VisualElementRenderer");
+		private static readonly MethodInfo _viewExtensionsMethod = typeof(Microsoft.Maui.Controls.Platform.ViewExtensions).Assembly.GetType("Microsoft.Maui.Controls.Platform.ViewExtensions")?.GetRuntimeMethod("EnsureId", new[] { typeof(Android.Views.View) });
 		private static readonly MethodInfo _elementRendererTypeOnTouchEvent = ElementRendererType?.GetRuntimeMethod("OnTouchEvent", new[] { typeof(MotionEvent) });
 		private bool _isDisposed;
 		private int? _defaultLabelFor;

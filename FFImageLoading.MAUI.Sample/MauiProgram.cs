@@ -19,7 +19,7 @@ namespace FFImageLoading.MAUI.Sample
 				.ConfigureMauiHandlers(h =>
 				{
 #if ANDROID
-					h.AddCompatibilityRenderer(typeof(FFImageLoading.Forms.CachedImage), typeof(FFImageLoading.Forms.Platform.CachedImageRenderer));
+					h.AddCompatibilityRenderer(typeof(FFImageLoading.Forms.CachedImage), typeof(FFImageLoading.Forms.Platform.CachedImageFastRenderer));
 #endif
 				});
 			return builder.Build();
