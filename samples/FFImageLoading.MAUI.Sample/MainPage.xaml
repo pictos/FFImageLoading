@@ -2,10 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FFImageLoading.MAUI.Sample.MainPage"
              BackgroundColor="{DynamicResource SecondaryColor}"
-             xmlns:ffimg="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.MAUI">
+             xmlns:ffimg="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.MAUI"
+             xmlns:trans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
 
     <ScrollView Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
-        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*">
+        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto, 100, *">
 
             <Label 
                 Text="Hello, World!"
@@ -38,19 +39,26 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
-            <ffimg:CachedImage Source="dotnet_bot.png"
-                               Grid.Row ="4"
-                               BackgroundColor="Red"
-                WidthRequest="250"
-                HeightRequest="110"/>
-
-            <!--<Image Grid.Row="4"
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                WidthRequest="250"
-                HeightRequest="310"
-                HorizontalOptions="Center" />-->
-
+            <ffimg:CachedImage 
+                    Source="dotnet_bot.png"
+                    BackgroundColor="Red"
+                Grid.Row="4">
+                <ffimg:CachedImage.Transformations>
+                    <trans:CircleTransformation BorderSize="10" BorderHexColor="#FCFCFC"/>
+                    <trans:RotateTransformation Degrees="90"/>
+                </ffimg:CachedImage.Transformations>
+            </ffimg:CachedImage>
+            <VerticalStackLayout 
+                               Grid.Row ="5">
+                <ffimg:CachedImage 
+                                Source="https://avatars.githubusercontent.com/u/20712372?v=4"
+                    LoadingPlaceholder="dotnet_bot.png"
+                               >
+                    <ffimg:CachedImage.Transformations>
+                        <trans:CircleTransformation BorderSize="10" BorderHexColor="#FF0000"/>
+                    </ffimg:CachedImage.Transformations>
+                </ffimg:CachedImage>
+            </VerticalStackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>

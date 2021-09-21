@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net6.0;net6.0-ios;net6.0-android;</TargetFrameworks>
+		<!--<TargetFrameworks>net6.0;net6.0-android;</TargetFrameworks>-->
 		<!-- <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net6.0-windows10.0.19041</TargetFrameworks> -->
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
 		<UseMaui>true</UseMaui>
@@ -13,14 +14,14 @@
 	</ItemGroup>
 
   <ItemGroup Condition="$(TargetFramework.Contains('-android'))">
-    <ProjectReference Include="..\source\FFImageLoading.Droid\FFImageLoading.Droid.csproj" />
+    <ProjectReference Include="..\FFImageLoading.Droid\FFImageLoading.Droid.csproj" />
   </ItemGroup>
   <ItemGroup Condition="$(TargetFramework.Contains('-ios'))">
-    <ProjectReference Include="..\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj" />
+    <ProjectReference Include="..\FFImageLoading.Touch\FFImageLoading.Touch.csproj" />
   </ItemGroup>
   <ItemGroup Condition="$(TargetFramework.Contains('-ios')) != true AND $(TargetFramework.Contains('-android')) != true">
-    <ProjectReference Include="..\source\FFImageLoading.Forms.Mock\FFImageLoading.Forms.Mock.csproj" />
-    <ProjectReference Include="..\source\FFImageLoading.Mock\FFImageLoading.Mock.csproj" />
+    <ProjectReference Include="..\FFImageLoading.Forms.Mock\FFImageLoading.Forms.Mock.csproj" />
+    <ProjectReference Include="..\FFImageLoading.Mock\FFImageLoading.Mock.csproj" />
 
   </ItemGroup>
 
@@ -30,19 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\source\FFImageLoading.Common\FFImageLoading.csproj" />
-	</ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Platforms\iOS\CachedImageRenderer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Platforms\iOS\FFImageLoadingImageSourceHandler.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Platforms\iOS\ImageSourceBinding.cs" />
+    <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj" />
   </ItemGroup>
 
 </Project>

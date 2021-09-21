@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-ios;net6.0-android;net6.0-maccatalyst</TargetFrameworks>
+		<!--<TargetFrameworks>net6.0-android;</TargetFrameworks>-->
 		<!-- <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net6.0-windows10.0.19041</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
 		<RootNamespace>FFImageLoading.MAUI.Sample</RootNamespace>
@@ -44,12 +45,25 @@
 		<PackageReference Include="Microsoft.WindowsAppSDK.WinUI" Version="1.0.0-experimental1" />
 		<PackageReference Include="Microsoft.WindowsAppSDK.InteractiveExperiences" Version="1.0.0-experimental1" NoWarn="NU1701" />
 	</ItemGroup>
+  
+  <ItemGroup Condition="$(TargetFramework.Contains('-android'))">
+    <ProjectReference Include="..\..\source\FFImageLoading.Transformations.Droid\FFImageLoading.Transformations.Droid.csproj" />
+  </ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\FFImageLoading.MAUI\FFImageLoading.MAUI.csproj" />
-	</ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.Contains('-ios'))">
+    <ProjectReference Include="..\..\source\FFImageLoading.Transformations.Touch\FFImageLoading.Transformations.Touch.csproj" />
+  </ItemGroup>
 
-	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
+  <ItemGroup Condition="$(TargetFramework.Contains('-ios')) != true AND $(TargetFramework.Contains('-android')) != true">
+    <ProjectReference Include="..\..\source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\source\FFImageLoading.MAUI\FFImageLoading.MAUI.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	</PropertyGroup>
