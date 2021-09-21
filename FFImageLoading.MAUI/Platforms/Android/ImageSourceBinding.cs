@@ -7,7 +7,7 @@ using Microsoft.Maui.Controls;
 
 namespace FFImageLoading.Forms.Platform
 {
-    [Preserve(AllMembers = true)]
+    
     internal class ImageSourceBinding : IImageSourceBinding
     {
         public ImageSourceBinding(FFImageLoading.Work.ImageSource imageSource, string path)

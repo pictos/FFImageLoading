@@ -7,7 +7,7 @@ using Android.Widget;
 
 namespace FFImageLoading.Forms.Platform
 {
-    [Preserve(AllMembers = true)]
+    
     public class CachedImageView : ImageView
     {
         bool _skipInvalidate;

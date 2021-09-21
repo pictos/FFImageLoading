@@ -14,7 +14,7 @@ using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 
 namespace FFImageLoading.Forms.Platform
 {
-	[Preserve(AllMembers = true)]
+	
 	public class FFImageLoadingImageViewHandler : HandlerBase<ImageView>, IImageViewHandler
 	{
 		public Task LoadImageAsync(Microsoft.Maui.Controls.ImageSource imageSource, ImageView imageView, CancellationToken cancellationToken = default)

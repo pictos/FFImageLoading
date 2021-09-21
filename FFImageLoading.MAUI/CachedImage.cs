@@ -13,7 +13,7 @@ using Microsoft.Maui.Graphics;
 
 namespace FFImageLoading.Forms
 {
-	[Preserve(AllMembers = true)]
+	
 	/// <summary>
 	/// CachedImage by Daniel Luberda
 	/// </summary>

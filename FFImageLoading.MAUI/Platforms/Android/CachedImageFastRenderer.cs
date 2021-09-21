@@ -28,7 +28,7 @@ namespace FFImageLoading.Forms.Platform
 	/// <summary>
 	/// CachedImage Implementation
 	/// </summary>
-	[Preserve(AllMembers = true)]
+	
 	public class CachedImageFastRenderer : CachedImageView, IVisualElementRenderer
 	{
 		internal static readonly Type ElementRendererType = typeof(Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers.ImageRenderer).Assembly.GetType("Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers.VisualElementRenderer");

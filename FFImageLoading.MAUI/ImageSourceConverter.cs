@@ -5,7 +5,7 @@ using Microsoft.Maui.Controls;
 
 namespace FFImageLoading.Forms
 {
-    [Preserve(AllMembers = true)]
+    
     public class ImageSourceConverter : TypeConverter, IValueConverter
     {
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
