@@ -645,6 +645,7 @@ namespace FFImageLoading.Forms
 
 			if (source is EmbeddedResourceImageSource embResourceSource)
 				await ImageService.Instance.InvalidateCacheEntryAsync(embResourceSource.Uri.OriginalString, cacheType, removeSimilar).ConfigureAwait(false);
+
 		}
 
 		/// <summary>

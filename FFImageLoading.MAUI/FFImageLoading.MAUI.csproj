@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0;net6.0-ios;net6.0-android;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net6.0;net6.0-ios;net6.0-android;</TargetFrameworks>
 		<!-- <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net6.0-windows10.0.19041</TargetFrameworks> -->
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
 		<UseMaui>true</UseMaui>
@@ -12,14 +12,25 @@
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-experimental1" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Platforms\iOS\" />
-	  <Folder Include="Platforms\MacCatalyst\" />
-	</ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.Contains('-android'))">
+    <ProjectReference Include="..\source\FFImageLoading.Droid\FFImageLoading.Droid.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.Contains('-ios'))">
+    <ProjectReference Include="..\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.Contains('-ios')) != true AND $(TargetFramework.Contains('-android')) != true">
+    <ProjectReference Include="..\source\FFImageLoading.Forms.Mock\FFImageLoading.Forms.Mock.csproj" />
+    <ProjectReference Include="..\source\FFImageLoading.Mock\FFImageLoading.Mock.csproj" />
 
-	<ItemGroup>
-	  <ProjectReference Include="..\source\FFImageLoading.Common\FFImageLoading.csproj" />
-	  <ProjectReference Include="..\source\FFImageLoading.Droid\FFImageLoading.Droid.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Platforms\iOS\" />
+    <Folder Include="Platforms\MacCatalyst\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\source\FFImageLoading.Common\FFImageLoading.csproj" />
 	</ItemGroup>
 
 </Project>
